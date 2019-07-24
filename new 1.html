@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>NEFT BANKING</title>
+<script type="text/javascript">
+        function check() {
+            if (document.myform.firstname.value === null || myform.firstname.value.length == "") {
+           alert("this is  invalid , please enter value ");
+            }
+        }
+    </script>
+
+
+<style>
+header,footer{
+   
+    color:#FFFFFF;
+    background-color:#003300;
+    clear: left;
+    text-align: center;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+
+</style>
+</head>
+<body>
+<form name="myform" onsubmit="return check()">
+<div class="container">
+
+<header>
+   <h1>Neft Transfer</h1>
+   
+</header>
+
+
+<fieldset>
+ 
+  <h3>select the account from which you want to transfer</h3>
+  
+
+<table>
+
+    <tr>
+      <td width="144">Account No*</td>
+      <td width="148">Account Type</td>
+      <td width="151">Branch*</td>
+	  <td width="151">Balance*</td>
+    </tr>
+    <tr>
+      <td><input  type="text" name="firstname" onsubmit="return check()" /><span id="errorname">    </span></td>
+      <td>
+	  <select>
+	  <option value="select">-select-</option>
+	  <option value="savings account">savings account</option>
+	  <option value="loan account">loan account</option>
+	  <option value="OD">OD</option>
+	  <option value="current account">current account</option>
+	  </select>
+	  </td>
+      <td><input  type="text" name="firstname" onsubmit="return check()" /><span id="errorname">    </span></td>
+	   <td><input type="text" name="firstname" onsubmit="return check()" /><span id="errorname">    </span></td>
+    </tr>
+  
+  </table>
+  
+  
+  <br>
+  <table>
+ 
+<tr>
+<td>Selected Account Number<input  type="text" name="firstname" onsubmit="return check()" /><span id="errorname">    </span></td>
+</tr>
+<tr>
+<td>Amount*<input  type="text" name="firstname" onsubmit="return check()" /><span id="errorname">    </span>INR</td>
+</tr>
+<tr>
+<td>Remarks<input  type="text" name="firstname" onsubmit="return check()" /><span id="errorname">    </span>
+</td>
+</tr>
+
+</table>
+
+<br>
+
+<table>
+
+<tr><h3>Select the Beneficiary account</h3></tr>
+<table>
+  
+    <tr>
+      <td width="144">Account No*</td>
+      <td width="148">Beneficiary Name*</td>
+      <td width="151">Branch*</td>
+	  <td width="151">Bank*</td>
+	  <td width="151">Limit*</td>
+    </tr>
+    <tr>
+      <td><input  type="text" name="firstname" onsubmit="return check()" /><span id="errorname">    </span></td>
+      <td><input  type="text" name="firstname" onsubmit="return check()" /><span id="errorname">    </span></td>
+	  <td><input  type="text" name="firstname" onsubmit="return check()" /><span id="errorname">    </span></td>
+      <td><input  type="text" name="firstname" onsubmit="return check()" /><span id="errorname">    </span></td>
+	   <td><input  type="text" name="firstname" onsubmit="return check()" /><span id="errorname">    </span></td>
+    </tr>
+  
+  </table>
+  <br>
+  <table>
+  
+<tr>
+<td>Selected Account Number<input type="text" name="firstname" onsubmit="return check()" /><span id="errorname">    </span></td>
+</tr>
+
+</table>
+<br>
+<table>
+
+<tr><h3>Schedule date*</h3></tr>
+<tr>
+<td width="144"><input type="radio" name="choose">Pay Now</td>
+<td width="144"><input type="radio" name="choose">Schedule Later</td>
+<td width="144"><input type="radio" name="choose">Standing Instruction</td>
+</tr>
+
+</table>
+
+<p>information and the beneficiary name particulars will not be used therefor. note, as per RBI instructions credit will be effected based solely on the beneficiary account number information and the beneficiary name particulars will not be used therefor.</p>
+
+
+<input type="radio" name="choose">I accept terms and conditions.
+
+<br>
+
+
+<input type="submit" align="center-right">
+
+<footer>Copyright &copy; online life bank</footer>
+</div>
+</form>
+</body>
+</html>
+
+
+  
+  
+  
+  
+
+

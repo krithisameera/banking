@@ -1,0 +1,210 @@
+
+
+<html>
+<head>
+	<title>register</title>
+	<link href="registerstyle.css" rel="stylesheet" type="text/css">
+	
+	<!--javascript code starts here -->
+	<script type=text/javascript>
+	
+	function validate(){
+	var i;
+	var acc=myform.Account.value;
+	var cif=myform.cifno.value;
+	var sur=myform.surname.value;
+	var bran=myform.Branch.value;
+	var num=myform.Number.value;
+/*Account Number */
+	if(acc=="")
+	{
+	alert("enter the Account Number")
+	return false
+	}
+	
+	if(acc.length!=11)
+	{
+	alert("enter the valid Account Number")
+	return false
+	}
+	
+	/*cif number*/
+	
+	
+	if(cif=="")
+	{
+	alert("enter the cif Number")
+	return false
+	}
+	
+	if(cif.length!=11)
+	{
+	alert("enter the valid cif Number")
+	return false
+	}
+	
+	/*Surname */
+	if(sur==""||sur=="null")
+	{
+	alert("enter the Surname Number")
+	return false
+	}
+	/*branch code*/
+	
+	if(bran=="")
+	{
+	alert("enter the branch Number")
+	return false
+	}
+	
+	if(bran.length!=5)
+	{
+	alert("enter the valid branch Number")
+	return false
+	}
+	/*Registered Mobile Number */
+	if(num.length<11)
+	{
+	alert("enter the valid  Number")
+	return false
+	}
+	for(i=0;i<num.length;i++)
+	{
+	var ch=num.charAt(i);
+	if((ch<"0")||(ch>"9"))
+	{alert("invalid Number  ")
+	return false
+	}
+	}
+	
+	
+	}
+	</script>
+</head>
+<body>
+<section>
+
+	<div id="wrapper">
+		<div id="topBar">
+			<div id="logo">
+				<img src="images/logo.jpg" alt="logo">
+				<nav>
+				</nav>
+				
+		
+		
+		
+<form tag="Create Logon" name="myform" method ="post" onsubmit="return validate()" >
+		<fieldset>
+		<table>
+
+		<tr>
+		
+			<td>Account Number *: </td>          
+			<td><input type="text" name="Account" /></td>
+			</tr>
+			<tr>
+		     <td>CIF Number *:  </td>           
+			<td><input type="text" name="cifno" /></td>
+			</tr>
+			<tr>
+            <td>Surname *:</td>              
+			<td><input type="text" name="surname" /></td>
+            </tr>
+			<tr>
+		  <td> Branch Code *:  </td>  
+		  <td><input type="text " name="Branch" /></td>
+</tr>
+<tr>
+			<td>City *: </td>
+			<td>
+			<select>
+			<option value="select city">--select city--</option>
+<option value="ANDAMAN_&_NICOBAR">ANDAMAN & NICOBAR</option>
+<option value="ANDAMAN_&_NICOBAR_ISLAND">ANDAMAN & NICOBAR ISLAND</option>
+<option value="ANDHRA_PRADESH">ANDHRA PRADESH</option>
+<option value="ARUNACHAL_PRADESH">ARUNACHAL PRADESH</option>
+<option value="ASSAM">ASSAM</option>
+<option value="BIHAR">BIHAR</option>  
+<option value="CHANDIGARH">CHANDIGARH</option>
+<option value="CHHATTISGARH">CHHATTISGARH</option>
+<option value="DADRA_&_NAGAR_HAVELI">DADRA & NAGAR HAVELI</option>
+<option value="DAMAN_&_DIU">DAMAN & DIU</option>
+<option value="DELHI">DELHI</option>
+<option value="GOA">GOA</option>
+<option value="GUJARAT">GUJARAT</option>
+<option value="GUMLA">GUMLA</option>
+<option value="HARYANA">HARYANA</option>
+<option value="HIMACHAL_PRADESH">HIMACHAL PRADESH</option>
+<option value="JAMMU_&_KASHMIR">JAMMU & KASHMIR</option>
+<option value="JHARKHAND">JHARKHAND</option>
+<option value="KARNATAKA">KARNATAKA</option>
+<option value="KERALA">KERALA</option>
+<option value="LAKSHADWEEP">LAKSHADWEEP</option>
+<option value="MADHYA_PRADESH">MADHYA PRADESH</option>
+<option value="MAHARASHTRA">MAHARASHTRA</option>
+<option value="MANIPUR">MANIPUR</option>
+<option value="MEGHALAYA">MEGHALAYA</option>
+<option value="MIZORAM">MIZORAM</option>
+<option value="NAGALAND">NAGALAND</option>
+<option value="NEW_DELHI">NEW DELHI</option>
+<option value="ODISHA">ODISHA</option>
+<option value="ORISSA">ORISSA</option>
+<option value="PANCHKULA">PANCHKULA</option>
+<option value="PONDICHERRY">PONDICHERRY</option>
+<option value="PUDUCHERRY">PUDUCHERRY</option>
+<option value="PUNJAB">PUNJAB</option>
+<option value="RAJASTHAN">RAJASTHAN</option>
+<option value="SIKKIM">SIKKIM</option>
+<option value="TAMIL_NADU">TAMIL NADU</option>
+<option value="TELANGANA">TELANGANA</option>
+<option value="TRIPURA">TRIPURA</option>
+<option value="UTTAR_PRADESH">UTTAR PRADESH</option>
+<option value="UTTARAKHAND">UTTARAKHAND</option>
+<option value="UTTRAKHAND">UTTRAKHAND</option>
+<option value="WEST_BENGAL">WEST BENGAL</option>
+
+</select></td>
+			
+			
+		
+			</tr>
+			<tr>
+			<td>Registered Mobile Number *:   </td>      
+			<td><input type="text" name="Number" /></td>
+			</tr>
+			<tr>
+			<td>Facility Required *: </td>         
+			<td><select>
+			
+			<option value="select Transaction Right">--select Transaction Right--</option>
+<option value="Full Transaction Right">Full Transaction Right</option>
+<option value="Half Transaction Right">Half Transaction Right</option>
+<option value="View Rights">View Rights</option>
+</select>
+			</td>
+			</tr>
+<tr>
+			<td>
+		        <input type="submit" value="Submit" /></td>
+				</tr>
+			<tr>Note: Please make sure your details are correct before submitting form and that all fields marked with * are completed!.</tr>	
+	</table>
+	</fieldset>
+	</form>
+
+
+</div>
+</div>
+</div>
+
+Note: Please make sure your details are correct before submitting form and that all fields marked with * are completed!.</p>		
+	
+	</section>
+		
+		<footer >
+			Copyright &copy; 2017 Life bank 
+			
+		</footer>
+		
+		
